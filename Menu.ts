@@ -1,9 +1,16 @@
 import leia = require("readline-sync");
+import { Racao } from "./src/model/Racao";
+import { Brinquedo } from "./src/model/Brinquedo";
 
 export function main() {
 
     let opcao: number;
 
+    const p1: Racao = new Racao(1, "Golden", 1, "Gatos", 30, "Seca", "Salmão");
+    const p2: Brinquedo = new Brinquedo (2, "Osso", 2, "Cachorro", 10, "Plástico");
+    p1.visualizar();
+    p2.visualizar();
+    
     while (true) {
 
         console.log("*****************************************************");
